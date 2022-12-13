@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Minha Nacionalidade</h1>
+    Onde eu nasci ? <input type="text" name="txnc" id="txnc">
+    <input type="button" value="Verificar" onclick="confimar()">
+    <div id="res"></div>
+
+    <script>
+        function confimar() {
+            var tnac = window.document.getElementById('txnc')
+            var res = window.document.getElementById('res')
+            var nac = (tnac.value)
+            if ( nac == 'Brasil') {
+                res.innerHTML = 'Você é Brasileiro'
+            }else {
+                res.innerHTML = 'Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
